@@ -5,7 +5,7 @@ const year = now.getFullYear();
 
 export default `/**
 * @license
-* MarionetteJS (Marionette.AppRouter)
+* MarionetteJS (Marionette.TemplateCache)
 * ----------------------------------
 * v${version}
 *

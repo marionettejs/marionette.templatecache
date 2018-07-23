@@ -21,9 +21,9 @@ const rollupGlobals = {
 function makeESModule(bundle) {
   bundle.write({
     format: 'es',
-    dest: 'lib/marionette.approuter.esm.js',
+    dest: 'lib/marionette.templatecache.esm.js',
     sourceMap: true,
-    sourceMapFile: 'marionette.approuter.esm.js',
+    sourceMapFile: 'marionette.templatecache.esm.js',
     banner: banner,
     globals: rollupGlobals
   });
@@ -32,9 +32,9 @@ function makeESModule(bundle) {
 function generateBundle(bundle) {
   return bundle.generate({
     format: 'umd',
-    moduleName: 'Marionette.AppRouter',
+    moduleName: 'Marionette.TemplateCache',
     sourceMap: true,
-    sourceMapFile: 'marionette.approuter.js',
+    sourceMapFile: 'marionette.templatecache.js',
     banner: banner,
     globals: rollupGlobals
   });
@@ -70,8 +70,8 @@ function build(buildPath) {
     fs.writeFileSync(buildPath + pkg.name + '.js.map', gen.map.toString());
     var minified = uglifyjs.minify(gen.code, {sourceMap: {
         content: gen.map,
-        filename: 'marionette.approuter.min.js',
-        url: 'marionette.approuter.min.js.map'
+        filename: 'marionette.templatecache.min.js',
+        url: 'marionette.templatecache.min.js.map'
       },
       output: {
         comments: 'some'
