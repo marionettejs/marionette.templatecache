@@ -1,7 +1,7 @@
 {
   "name": "marionette.templatecache",
   "description": "Renderer which provides a cache for retrieving templates from script blocks in your HTML. This improved the speed of subsequent calls to get a template.",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "homepage": "https://marionettejs.com/",
   "main": "lib/marionette.templatecache.js",
   "module": "lib/marionette.templatecache.esm.js",
